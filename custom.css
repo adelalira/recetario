@@ -22,7 +22,10 @@
   }
 
 a img {
-    width: 30%;
+    width: 110%;
+}
+#logo{
+  width: 15%;
 }
 
 .navbar{
