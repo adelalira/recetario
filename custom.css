@@ -6,6 +6,7 @@
 }
 
 /*COLORES ESTANDAR*/
+
 .colorAmarillo {
   background-color: #f8c24b !important;
 }
@@ -31,9 +32,7 @@ a img {
 .colorNav {
   background-color: #ffccff;
 }
-.nav-item {
-  color: black;
-}
+
 .logo {
   width: 100px;
 }
@@ -51,3 +50,11 @@ a img {
 }
 
 /* PÁGINA INICIO */
+
+/*Para que en pantallas medianas y grandes el carrousel ocupe el 75% en lugar del 100% que ocupa en móvil*/
+@media screen and (min-width: 481px) and (max-width: 3000px) {
+  #carouselExampleIndicators {
+    width: 75%;
+    text-align: center;
+  }
+}
