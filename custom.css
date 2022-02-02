@@ -3,6 +3,7 @@
 
 * {
   font-family: "Quicksand", sans-serif;
+  font-size: 20px;
 }
 
 /*COLORES ESTANDAR*/
@@ -16,25 +17,23 @@
 }
 
 .colorRosa {
-  background-color: rgba(243, 121, 122, 255);
+  background-color: #f6c6c3;
+}
+.colorVerde {
+  background-color: rgba(114, 183, 161, 255);
+}
+.colorAzul {
+  background-color: rgba(123, 206, 209, 255);
 }
 
 /* BARRA DE NAVEGACIÓN */
-.header {
-  background-color: #ffffcc;
-  text-align: center;
-}
 
 a img {
   width: 30%;
 }
 
-.colorNav {
-  background-color: #ffccff;
-}
-
 .logo {
-  width: 100px;
+  width: 70px;
 }
 
 .name {
