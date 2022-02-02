@@ -1,99 +1,110 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Page Title</title>
-    <link rel='stylesheet' type='text/css' href='custom.css'>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-
+  <title>MoonCake</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="custom.css" rel="stylesheet">
 </head>
 <body>
 
-    
-<div class="container-fluid">
-  <div class="row header" >
-    <a href="index.html" class="logo"><img id="logo" src="img/MoonCake (1).png" alt=""></a> 
-  </div>
+  <div class="container-fluid">
+
+    <!-- ENCABEZADO -->
+    <div class="row"> <!-- start row-->
+      <div class="header colorVerde text-center" >
+        <a href="index.html" class="logo"><img src="img/MoonCake (1).png" class="name"></a> 
+      </div>
+    </div>  <!-- end row-->
 
 
-  <div class="row">
+    <!-- BARRA DE NAVEGACIÓN -->
+    <div class="row">  <!-- start row-->
 
-       <nav class="navbar">
-          <div>
-             <!-- --------------------------------------
-             -------- Hamburger Links ------------
-             --------------------------------------- -->
-             <div class="nav-menu">
-                <!-- Header icons -->
-                <a class="navbar-brand col-1" href="#"><img src="img/pasteleria.png" ></a>
-                <a href="#twitter" class="nav-link"><i class="fab nav-icon fa-twitter"></i>Twitter</a>
-                <a href="#linkedin" class="nav-link"><i class="fab nav-icon fa-linkedin"></i>Linkedin</a>
-                <a href="#tiktok" class="nav-link"><i class="fab nav-icon fa-tiktok"></i>Tiktok</a>
-                <a href="#whatsapp" class="nav-link"><i class="fab nav-icon fa-whatsapp"></i>WhatsApp</a>
-                <a href="#facebook" class="nav-link"><i class="fab nav-icon fa-facebook"></i>Facebook</a>
-                <form class="d-flex">
-                  <input class="form-control me-2" type="text" placeholder="Search">
-                  <button class="btn colorAmarillo" type="button">Search</button>
-                </form>
-             </div>
-
-             
- 
-             <!-- --------------------------------------
-             ---------- Hamburger button ---------------
-             --------------------------------------- -->
-             <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-             </div>
-          </div>
-       </nav>
-    </div>
- 
-    <!-- ? Optional Markup 
-
-
-
-
-<!--
-    <div class="row">
-
-        <nav class="navbar navbar-expand-sm">
-          <div class="collapse navbar-collapse">
-            <li class="nav-item">
-              <a class="navbar-brand" href="https://www.flaticon.com/free-icons/cake"><img src="img/cake.png" title="cake icons"/></a>
-            </li>
-            <ul class="navbar-nav me-auto">
+      <nav class="navbar navbar-expand-sm colorRosa navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="img/pasteleria1.png" class="logo" >  
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon  "></span>
+          </button>
+          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link nav-color" href="javascript:void(0)">Recipes</a>
+                <a class="nav-link text-black" href="galleryRecipes.html">Recipes</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link nav-color" href="javascript:void(0)">New Recipes</a>
+                <a class="nav-link text-black" href="newRecipe.html">Add Recipe</a>
               </li>
+              <form class="d-flex searchAling">
+                <input class="form-control me-2" type="text" placeholder="Search">
+                <button class="btn colorAmarillo" type="button">Search</button>
+              </form>  
             </ul>
-            <form class="d-flex">
-              <input class="form-control me-2" type="text" placeholder="Search">
-              <button class="btn colorAmarillo" type="button">Search</button>
-            </form>
           </div>
-        </nav> 
+        </div>
+      </nav>
+
+    </div>  <!-- end row-->
+
+    <!-- CONTENIDO -->
+    <div class="row justify-content-center p-1">
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="3000">
+            <img src="img/carrousel_1.jpg" class="img-fluid w-100" alt="...">
+          </div>
+          <div class="carousel-item" data-bs-interval="3000">
+            <img src="img/carrousel_2.jpg" class="img-fluid w-100" alt="...">
+
+          </div>
+          <div class="carousel-item" data-bs-interval="3000">
+            <img src="img/carrousel_3.jpg" class="img-fluid w-100" alt="...">
+          </div>
+          <div class="carousel-item" data-bs-interval="3000">
+            <img src="img/carrousel_4.jpg" class="img-fluid w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
     </div>
-  -->
-</div>
 
-
-
-<footer class="text-center text-white navbar-fixed-bottom" >
-  <div class="text-center text-dark p-3" ">
-    <a> Privacity Policy</a>
-    <a>  Legal Notice</a>
-  
     
-  </div>
-</footer>
+    <!-- PIE DE PÁGINA -->
+    <div class="row">
+      <div class="col-12 px-0">
+
+        <div class="text-center text-white navbar-fixed-bottom colorVerde" >
+          <div class="text-center text-dark p-3" ">
+            <a> Privacity Policy</a>
+            <br>
+            <a>  Legal Notice</a> 
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+  </div> <!-- end container-fluid-->
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
-<script src="scripts.js"></script>
 </html>
