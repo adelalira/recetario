@@ -26,41 +26,26 @@
       <div class="row">
         <!-- start row-->
 
-        <nav class="navbar navbar-expand-sm colorRosa navbar-dark">
+        <nav class="navbar navbar-expand-sm colorRosa navbar-dark py-0">  <!-- py-0 para quitar el padding top-bottom que trae por defecto la navBar-->
           <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-              <img src="img/pasteleria1.png" class="logo" />
+            <a class="navbar-brand" href="index.html">
+              <img src="img/pasteleria1.png" class="logo" >  
             </a>
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#collapsibleNavbar"
-            >
-              <span class="navbar-toggler-icon"></span>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+              <span class="navbar-toggler-icon  "></span>
             </button>
             <div class="collapse navbar-collapse" id="collapsibleNavbar">
               <ul class="navbar-nav">
                 <li class="nav-item">
-                  <a class="nav-link text-black" href="galleryRecipes.html"
-                    >Recipes</a
-                  >
+                  <a class="nav-link text-black" href="galleryRecipes.html">Recipes</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link text-black" href="newRecipe.html"
-                    >Add Recipe</a
-                  >
+                  <a class="nav-link text-black" href="newRecipe.html">Add Recipe</a>
                 </li>
                 <form class="d-flex searchAling">
-                  <input
-                    class="form-control me-2"
-                    type="text"
-                    placeholder="Search"
-                  />
-                  <button class="btn colorAmarillo" type="button">
-                    Search
-                  </button>
-                </form>
+                  <input class="form-control me-2" type="text" placeholder="Search">  <!--me-2 es para que exista un margin entre el input y el botón-->
+                  <button class=" btn btn-sm colorAmarillo " type="button">Search</button>
+                </form>  
               </ul>
             </div>
           </div>
@@ -195,7 +180,7 @@
         </div>
   
       </div>
-    </div>
+
     <!-- end container-fluid-->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
