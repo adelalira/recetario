@@ -9,20 +9,20 @@
 </head>
 <body>
 
-  <div class="container-fluid">
+  <div class="container-fluid h100">
 
     <!-- ENCABEZADO -->
     <div class="row"> <!-- start row-->
-      <div class="header colorVerde text-center" >
-        <a href="index.html" class="logo"><img src="img/MoonCake (1).png" class="name"></a> 
-      </div>
+      <header class="colorVerde text-center">
+        <a href="index.html"><img src="img/MoonCake (1).png" class="name"></a> 
+      </header>
     </div>  <!-- end row-->
 
 
     <!-- BARRA DE NAVEGACIÓN -->
     <div class="row">  <!-- start row-->
 
-      <nav class="navbar navbar-expand-sm colorRosa navbar-dark">
+      <nav class="navbar navbar-expand-sm colorRosa navbar-dark py-0">  <!-- py-0 para quitar el padding top-bottom que trae por defecto la navBar-->
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
             <img src="img/pasteleria1.png" class="logo" >  
@@ -39,8 +39,8 @@
                 <a class="nav-link text-black" href="newRecipe.html">Add Recipe</a>
               </li>
               <form class="d-flex searchAling">
-                <input class="form-control me-2" type="text" placeholder="Search">
-                <button class="btn colorAmarillo" type="button">Search</button>
+                <input class="form-control me-2" type="text" placeholder="Search">  <!--me-2 es para que exista un margin entre el input y el botón-->
+                <button class=" btn btn-sm colorAmarillo " type="button">Search</button>
               </form>  
             </ul>
           </div>
@@ -50,7 +50,7 @@
     </div>  <!-- end row-->
 
     <!-- CONTENIDO -->
-    <div class="row justify-content-center p-1">
+    <div class="row justify-content-center p-1 my-3">
       <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -62,6 +62,7 @@
           <div class="carousel-item active" data-bs-interval="3000">
             <img src="img/carrousel_1.jpg" class="img-fluid w-100" alt="...">
           </div>
+
           <div class="carousel-item" data-bs-interval="3000">
             <img src="img/carrousel_2.jpg" class="img-fluid w-100" alt="...">
           </div>
@@ -85,16 +86,17 @@
 
     
     <!-- PIE DE PÁGINA -->
+
     <div class="row">
       <div class="col-12 px-0">
 
-        <div class="text-center text-white navbar-fixed-bottom colorVerde" >
-          <div class="text-center text-dark p-3" ">
+        <footer class="text-center text-white navbar-fixed-bottom colorVerde py-0" >
+          <div class="text-center text-dark" ">
             <a> Privacity Policy</a>
             <br>
             <a>  Legal Notice</a> 
           </div>
-        </div>
+        </footer>
       </div>
 
     </div>

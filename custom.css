@@ -26,18 +26,20 @@
   background-color: rgba(123, 206, 209, 255);
 }
 
-/* BARRA DE NAVEGACIÓN */
-
-a img {
-  width: 30%;
+.h100 {
+  height: 100%;
+  min-height: 100vh;
 }
 
+/* BARRA DE NAVEGACIÓN */
+
 .logo {
-  width: 70px;
+  width: 50px;
 }
 
 .name {
-  width: 15%;
+  /*para redimensionar la imagen del header*/
+  width: 20%;
 }
 
 /* para que el formulario del cuadro de búsqueda se adapte a las pantallas */
@@ -47,13 +49,26 @@ a img {
     right: 2%;
   }
 }
+/* MÓVILES --> dispositivos con anchura igual o inferior a 480 */
+@media screen and (max-width: 481px) {
+  .name {
+    /*para redimensionar la imagen del header*/
+    width: 25%;
+  }
+}
+@media screen and (min-width: 811px) and (max-width: 1400px) {
+  .name {
+    /*para redimensionar la imagen del header*/
+    width: 15%;
+  }
+}
 
 /* PÁGINA INICIO */
 
-/*Para que en pantallas medianas y grandes el carrousel ocupe el 75% en lugar del 100% que ocupa en móvil*/
+/*Para que en pantallas medianas y grandes el carrousel ocupe el 60% en lugar del 100% que ocupa en móvil*/
 @media screen and (min-width: 481px) and (max-width: 3000px) {
   #carouselExampleIndicators {
-    width: 75%;
+    width: 60%;
     text-align: center;
   }
 }
