@@ -72,3 +72,32 @@
     text-align: center;
   }
 }
+
+@media (min-width:988px) {
+  .footer {
+      position: relative;
+  }
+  }
+
+
+/* NEW RECIPE */
+
+.imagenNewRecipe{
+  width: 2%;
+}
+
+.footerNewRecipe{
+  position: relative!important;
+}
+
+@media (max-width:880px){
+  .imagenNewRecipe{
+    display: none;
+  }
+}
+
+@media (max-width: 1912px){
+  .divImagen{
+    display: none;
+  }
+}
