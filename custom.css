@@ -72,6 +72,7 @@
     text-align: center;
   }
 }
+
 /* tamaño de carousel del 90% en tablets*/
 @media screen and (min-width: 481px) and (max-width: 846px) {
   #carouselExampleIndicators {
@@ -86,6 +87,7 @@
     text-align: center;
   }
 }
+
 
 /* NEW RECIPE */
 
