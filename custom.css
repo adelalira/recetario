@@ -6,7 +6,7 @@
   font-size: 20px;
 }
 
-/*COLORES ESTANDAR*/
+/*COLORES Y CLASES ESTANDAR */
 
 .colorAmarillo {
   background-color: #f8c24b !important;
@@ -37,11 +37,6 @@
   width: 50px;
 }
 
-.name {
-  /*para redimensionar la imagen del header*/
-  width: 20%;
-}
-
 /* para que el formulario del cuadro de búsqueda se adapte a las pantallas */
 @media screen and (min-width: 481px) and (max-width: 3000px) {
   .searchAling {
@@ -49,55 +44,67 @@
     right: 2%;
   }
 }
-/* MÓVILES --> dispositivos con anchura igual o inferior a 480 */
-@media screen and (max-width: 481px) {
+/*  imagen del header en móviles  */
+@media screen and (max-width: 480px) {
   .name {
-    /*para redimensionar la imagen del header*/
     width: 25%;
   }
 }
-@media screen and (min-width: 811px) and (max-width: 1400px) {
+/*  imagen del header en tablet  */
+@media screen and (min-width: 481px) and (max-width: 846px) {
   .name {
-    /*para redimensionar la imagen del header*/
+    width: 20%;
+  }
+}
+/*  imagen del header en pc  */
+@media screen and (min-width: 847px) and (max-width: 2100px) {
+  .name {
     width: 15%;
   }
 }
 
 /* PÁGINA INICIO */
 
-/*Para que en pantallas medianas y grandes el carrousel ocupe el 60% en lugar del 100% que ocupa en móvil*/
-@media screen and (min-width: 481px) and (max-width: 3000px) {
+/*tamaño del carousel del 100% en móvil*/
+@media screen and (max-width: 480px) {
+  #carouselExampleIndicators {
+    width: 100%;
+    text-align: center;
+  }
+}
+/* tamaño de carousel del 90% en tablets*/
+@media screen and (min-width: 481px) and (max-width: 846px) {
+  #carouselExampleIndicators {
+    width: 90%;
+    text-align: center;
+  }
+}
+/* tamaño de carousel del 60% en pc*/
+@media screen and (min-width: 847px) and (max-width: 2200px) {
   #carouselExampleIndicators {
     width: 60%;
     text-align: center;
   }
 }
 
-@media (min-width:988px) {
-  .footer {
-      position: relative;
-  }
-  }
-
-
 /* NEW RECIPE */
 
-.imagenNewRecipe{
+.imagenNewRecipe {
   width: 2%;
 }
 
-.footerNewRecipe{
-  position: relative!important;
+.footerNewRecipe {
+  position: relative !important;
 }
 
-@media (max-width:880px){
-  .imagenNewRecipe{
+@media (max-width: 880px) {
+  .imagenNewRecipe {
     display: none;
   }
 }
 
-@media (max-width: 1912px){
-  .divImagen{
+@media (max-width: 1912px) {
+  .divImagen {
     display: none;
   }
 }
