@@ -88,15 +88,10 @@
   }
 }
 
-
 /* NEW RECIPE */
 
 .imagenNewRecipe {
   width: 2%;
-}
-
-.footerNewRecipe {
-  position: relative !important;
 }
 
 @media (max-width: 880px) {

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>MoonCake</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="custom.css" rel="stylesheet">
+  <link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.2.0/css/font-awesome.min.css"/>  <!-- ICONOS FONTAWESOME -->
+</head>
+<body>
+
+  <div class="container-fluid">
+
+    <!-- ENCABEZADO -->
+    <div class="row"> <!-- start row-->
+      <div class="header colorVerde text-center" >
+        <a href="index.html" class="logo"><img src="img/MoonCake (1).png" class="name"></a> 
+      </div>
+    </div>  <!-- end row-->
+
+
+    <!-- BARRA DE NAVEGACIÓN -->
+    <div class="row">  <!-- start row-->
+
+      <nav class="navbar navbar-expand-sm colorRosa navbar-dark py-0">  <!-- py-0 para quitar el padding top-bottom que trae por defecto la navBar-->
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <img src="img/pasteleria1.png" class="logo" >  
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon  "></span>
+          </button>
+          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link text-black" href="galleryRecipes.html">Recipes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-black" href="newRecipe.html">Add Recipe</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-black" href="contact.html">Contact</a>
+              </li>
+              <form class="d-flex searchAling">
+                <input class="form-control me-2" type="text" placeholder="Search">  <!--me-2 es para que exista un margin entre el input y el botón-->
+                <button class=" btn btn-sm colorAmarillo " type="button">Search</button>
+              </form>  
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+    </div>  <!-- end row-->
+
+
+    <h2 class="text-center p-3">
+        <img src="./img/cake.png" class="img-fluid imagenNewRecipe" />
+        Contact us!
+        <img src="./img/cake.png" class="img-fluid imagenNewRecipe" />
+    </h2>
+
+    <div class= "row justify-content-center  text-center p-3 my-3">
+        <h6>If you have problems to upload your recipe or any other question, you can contact us by email.</h6>
+        <h6> We will answer your question as soon as as possible <i class="fa fa-smile-o"></i></h6>
+    </div>
+
+
+    <div class="row justify-content-center p-3 my-3">
+
+        <div class="table-responsive">
+
+            <table class="table table-striped table-bordered">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Name</th>
+                  <th scope="col">Last Name</th>
+                  <th scope="col">Phone</th>
+                  <th scope="col">Email</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Adela</td>
+                  <td>Lira</td>
+                  <td>666999888</td>
+                  <td><button class="btn colorRosa"><a href="mailto:alira.96@gmail.com" class="text-decoration-none">Send an email</a></button></td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Cristina</td>
+                  <td>Blanco</td>
+                  <td>633444222</td>
+                  <td><button class="btn colorRosa"><a href="mailto:crisblanco96@gmail.com" class="text-decoration-none">Send an email</a></button></td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Estefanía</td>
+                  <td>García</td>
+                  <td>655777111</td>
+                  <td><button class="btn colorRosa"><a href="mailto:estefaniagarci@gmail.com" class="text-decoration-none">Send an email</a></button></td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Laura</td>
+                  <td>Moreno</td>
+                  <td>688333666</td>
+                  <td><button class="btn colorRosa"><a href="mailto:lauramorelez@gmail.com" class="text-decoration-none">Send an email</a></button></td>
+                </tr>
+              </tbody>
+            </table>
+
+
+        </div>
+
+
+
+    </div>
+
+    <div class= "row justify-content-center m-2">
+
+        <div class="col-12  d-none d-md-block d-sm-block">  <!-- no se muestra en movil -->
+
+            <div class="card">
+              <div class="card-header">
+                Quote
+              </div>
+              <div class="card-body">
+                <blockquote class="blockquote mb-0">
+                  <p>My favorite hobby is cooking and eating. There is nothing I can do well if I have not eaten well. </p>
+                  <footer class="blockquote-footer">Darnell Lamont Walker <cite title="Source Title">writer, filmmaker, and artist</cite></footer>
+                </blockquote>
+              </div>
+            </div>
+    
+          </div>
+        
+      </div>
+
+
+    
+    <!-- PIE DE PÁGINA -->
+    <div class="row">
+    <div class="col-12 px-0">
+
+        <footer class="text-center text-white  colorVerde py-0" >
+        <div class="text-center text-dark" ">
+            <a> Privacity Policy</a>
+            <br>
+            <a>  Legal Notice</a> 
+        </div>
+        </footer>
+    </div>
+
+    </div>
+  
+  
+  </div> <!-- end container-fluid-->
+  
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  
+  </body>
+  </html>
